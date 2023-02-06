@@ -2,6 +2,14 @@
 
 Let's be honest, learning ceph is hard for newbies. I wrote this documentation to document the process of me learning ceph and to hopefully help anyone else who is also trying to learn ceph to implement it in their homelab. 
 
+## Install
+
+It's as simple as `sudo snap install microceph` 
+
+## Configure 
+
+Configuration is as simple as `sudo microceph init` and then enter the correct information. Enter yes to adding nodes and get the token. Then run `sudo microceph cluster add $TOKEN` on the other nodes where $TOKEN is your token.
+
 ## Questions 
 
 ### Can I use Ceph with a directory? 
